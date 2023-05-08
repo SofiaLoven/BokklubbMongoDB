@@ -1,0 +1,21 @@
+
+<%- include('./header'); %>
+<div class="addMember page">
+<h2>Lägg till en ny medlem</h2>
+<form action="/members/form" method="POST">
+    <label for="name">Namn</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
+    <label for="number">Mobilnummer</label>
+    <input type="text" id="number" name="number">
+    <label for="allergies">Allergier</label>
+    <input type="text" id="allergies" name="allergies">
+    <label for="favoriteBook">Favoritbok</label>
+    <input type="text" id="favoriteBook" name="favoriteBook">
+    <label for="registered">Registrerad</label>
+    <input type="date" id="registered" name="registered">
+    <button>Spara</button>
+</form>
+</div>
+<%- include('./footer'); %>

@@ -1,0 +1,20 @@
+
+<%- include('./header'); %>
+
+<div class="members page">
+
+    <h2>Medlemslista</h2>
+    <p>Klicka på namnet för att se utökad information</p>
+<ul>
+    <% members.forEach((member) => { %>
+        <li>
+            <i class="fa-solid fa-book"></i>
+            <a href="/member/<%= member._id %>">
+                <%= member.name %>
+            </a>
+        </li>
+        <%});%>
+    </ul>
+    
+</div>
+<%- include('./footer'); %>

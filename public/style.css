@@ -1,0 +1,134 @@
+body {
+  background-color: #eaf4f4;
+  color: #5f8172;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #a4c3b2 1.5px solid;
+  height: 200px;
+}
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+header ul a {
+  text-decoration: none;
+  color: #5f8172;
+  border-bottom: #5f8172 1.5px solid;
+  padding: 4px;
+  margin: 0 4px;
+}
+header ul a:hover {
+  background-color: #cce3de;
+  border-bottom: none;
+  transition: 200ms;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainPage div {
+  width: 50%;
+}
+
+.member div {
+  width: 50%;
+}
+.member div .smalHeader {
+  font-weight: 600;
+  border-bottom: #a4c3b2 solid 1.5px;
+}
+.member div button {
+  background: #5f8172;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  padding: 2px 8px;
+}
+
+.addMember form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.addMember form input {
+  margin-bottom: 8px;
+}
+.addMember form button {
+  margin-top: 4px;
+  background: #5f8172;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  padding: 2px 8px;
+}
+
+.members ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.members ul li {
+  margin-bottom: 8px;
+}
+.members ul li a {
+  color: #5f8172;
+}
+.members ul li a:hover {
+  font-weight: 600;
+}
+
+footer {
+  position: absolute;
+  top: 700px;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .contact {
+  margin-left: 8px;
+}
+footer .contact p {
+  border-bottom: #a4c3b2 1.5px solid;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+footer .contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+}
+footer .copyright {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 8px;
+}
+footer .copyright p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}/*# sourceMappingURL=style.css.map */

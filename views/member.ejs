@@ -1,0 +1,17 @@
+
+<%- include('./header'); %>
+<div class="member page">
+    <div>
+        <h2><%= member.name %></h2>
+        <p>Favoritbok: <%= member.favoriteBook %></p>
+        <p>Allergier: <%= member.allergies%></p>
+        <p class="smalHeader">Kontaktuppgifter</p>
+        <p>Mail: <%= member.email %></p>
+        <p>Telefonnummer: <%= member.number %></p>
+        <p>Registrerad: <%= member.registered %></p>
+        <form action="/member/<%= member._id %>" method="POST">
+            <button>Kicka medlemmen från bokklubben</button>
+        </form>
+    </div>
+</div>
+<%- include('./footer'); %>
